@@ -8,14 +8,15 @@ namespace TiK_LR__6
 {
     static class CRC
     {
-        private static long _poly = 0x235;
+        private static long _poly = 0b11001;
         private static readonly int _polyLength = (int) Math.Log(_poly, 2) + 1;
 
         private static int _inputCodeLength;
 
-        public static long CalculateCRC(long inputCode)
+        public static long CalculateCRC(long inputCode, bool isCheck = false)
         {
-            inputCode <<= _polyLength - 1;
+            if(!isCheck)
+                inputCode <<= _polyLength - 1;
 
             _inputCodeLength = (int)Math.Log(inputCode, 2) + 1;
             _poly <<= (_inputCodeLength - _polyLength);
@@ -28,7 +29,25 @@ namespace TiK_LR__6
                 }
                 _poly >>= 1;
             }
+            if ((int)Math.Log(inputCode, 2) + 1 == (int)Math.Log(_poly, 2) + 1)
+            {
+                inputCode ^= _poly;
+            }
             return inputCode;
+        }
+
+        private static long MSB(long inputCode)
+        {
+            int currentInputLength = (int)Math.Log(inputCode, 2) + 1;
+            int currentPolyLength = (int)Math.Log(_poly, 2) + 1;
+            for (var i = 0; i < (currentPolyLength - currentInputLength); i++)
+            {
+                if ((inputCode & (1 << (currentPolyLength - i - 1))) != (1 << (currentPolyLength - i - 1)))
+                {
+                    _poly >>= 1;
+                }
+            }
+            return _poly;
         }
 
         public static bool CheckMessage(long message, long crc)
@@ -36,7 +55,7 @@ namespace TiK_LR__6
             message <<= _polyLength - 1;
             long messagePlusCrcInt = message + crc;
 
-            return CalculateCRC(messagePlusCrcInt) == 0;
+            return CalculateCRC(messagePlusCrcInt, true) == 0;
         }
 
 
