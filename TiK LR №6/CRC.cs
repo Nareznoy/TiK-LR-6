@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TiK_LR__6
 {
@@ -33,21 +29,8 @@ namespace TiK_LR__6
             {
                 inputCode ^= _poly;
             }
-            return inputCode;
-        }
 
-        private static long MSB(long inputCode)
-        {
-            int currentInputLength = (int)Math.Log(inputCode, 2) + 1;
-            int currentPolyLength = (int)Math.Log(_poly, 2) + 1;
-            for (var i = 0; i < (currentPolyLength - currentInputLength); i++)
-            {
-                if ((inputCode & (1 << (currentPolyLength - i - 1))) != (1 << (currentPolyLength - i - 1)))
-                {
-                    _poly >>= 1;
-                }
-            }
-            return _poly;
+            return inputCode;
         }
 
         public static bool CheckMessage(long message, long crc)
@@ -57,7 +40,5 @@ namespace TiK_LR__6
 
             return CalculateCRC(messagePlusCrcInt, true) == 0;
         }
-
-
     }
 }
