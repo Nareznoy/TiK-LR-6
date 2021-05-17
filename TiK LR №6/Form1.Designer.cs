@@ -57,16 +57,16 @@ namespace TiK_LR__6
             // 
             // message16_textBox
             // 
-            this.message16_textBox.Location = new System.Drawing.Point(120, 44);
+            this.message16_textBox.Location = new System.Drawing.Point(92, 40);
             this.message16_textBox.Name = "message16_textBox";
-            this.message16_textBox.Size = new System.Drawing.Size(161, 20);
+            this.message16_textBox.Size = new System.Drawing.Size(273, 20);
             this.message16_textBox.TabIndex = 0;
             this.message16_textBox.Text = "4e 61 6e 67";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 28);
+            this.label1.Location = new System.Drawing.Point(89, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace TiK_LR__6
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 128);
+            this.label2.Location = new System.Drawing.Point(89, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 3;
@@ -83,9 +83,9 @@ namespace TiK_LR__6
             // 
             // CalculatedCRC_textBox
             // 
-            this.CalculatedCRC_textBox.Location = new System.Drawing.Point(120, 144);
+            this.CalculatedCRC_textBox.Location = new System.Drawing.Point(92, 140);
             this.CalculatedCRC_textBox.Name = "CalculatedCRC_textBox";
-            this.CalculatedCRC_textBox.Size = new System.Drawing.Size(161, 20);
+            this.CalculatedCRC_textBox.Size = new System.Drawing.Size(273, 20);
             this.CalculatedCRC_textBox.TabIndex = 2;
             // 
             // groupBox1
@@ -110,7 +110,7 @@ namespace TiK_LR__6
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(68, 147);
+            this.label10.Location = new System.Drawing.Point(40, 143);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(46, 13);
             this.label10.TabIndex = 9;
@@ -124,7 +124,7 @@ namespace TiK_LR__6
             "8",
             "10",
             "16"});
-            this.comboBox1.Location = new System.Drawing.Point(73, 44);
+            this.comboBox1.Location = new System.Drawing.Point(45, 40);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(41, 21);
             this.comboBox1.TabIndex = 8;
@@ -133,7 +133,7 @@ namespace TiK_LR__6
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(68, 73);
+            this.label7.Location = new System.Drawing.Point(40, 69);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 7;
@@ -142,7 +142,7 @@ namespace TiK_LR__6
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 47);
+            this.label6.Location = new System.Drawing.Point(9, 43);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 6;
@@ -150,15 +150,15 @@ namespace TiK_LR__6
             // 
             // message2_textBox
             // 
-            this.message2_textBox.Location = new System.Drawing.Point(120, 70);
+            this.message2_textBox.Location = new System.Drawing.Point(92, 66);
             this.message2_textBox.Name = "message2_textBox";
             this.message2_textBox.ReadOnly = true;
-            this.message2_textBox.Size = new System.Drawing.Size(161, 20);
+            this.message2_textBox.Size = new System.Drawing.Size(273, 20);
             this.message2_textBox.TabIndex = 5;
             // 
             // CalculateCRC_button
             // 
-            this.CalculateCRC_button.Location = new System.Drawing.Point(150, 96);
+            this.CalculateCRC_button.Location = new System.Drawing.Point(158, 92);
             this.CalculateCRC_button.Name = "CalculateCRC_button";
             this.CalculateCRC_button.Size = new System.Drawing.Size(111, 23);
             this.CalculateCRC_button.TabIndex = 4;
@@ -193,7 +193,7 @@ namespace TiK_LR__6
             "8",
             "10",
             "16"});
-            this.comboBox2.Location = new System.Drawing.Point(81, 81);
+            this.comboBox2.Location = new System.Drawing.Point(51, 82);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(41, 21);
             this.comboBox2.TabIndex = 10;
@@ -202,7 +202,7 @@ namespace TiK_LR__6
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(41, 84);
+            this.label9.Location = new System.Drawing.Point(11, 85);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(34, 13);
             this.label9.TabIndex = 9;
@@ -211,7 +211,7 @@ namespace TiK_LR__6
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(79, 43);
+            this.label8.Location = new System.Drawing.Point(49, 44);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 8;
@@ -220,7 +220,7 @@ namespace TiK_LR__6
             // CheckResultLabel
             // 
             this.CheckResultLabel.AutoSize = true;
-            this.CheckResultLabel.Location = new System.Drawing.Point(41, 157);
+            this.CheckResultLabel.Location = new System.Drawing.Point(11, 156);
             this.CheckResultLabel.Name = "CheckResultLabel";
             this.CheckResultLabel.Size = new System.Drawing.Size(0, 13);
             this.CheckResultLabel.TabIndex = 7;
@@ -228,7 +228,7 @@ namespace TiK_LR__6
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 144);
+            this.label5.Location = new System.Drawing.Point(11, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 6;
@@ -236,7 +236,7 @@ namespace TiK_LR__6
             // 
             // CheckData_button
             // 
-            this.CheckData_button.Location = new System.Drawing.Point(146, 107);
+            this.CheckData_button.Location = new System.Drawing.Point(164, 108);
             this.CheckData_button.Name = "CheckData_button";
             this.CheckData_button.Size = new System.Drawing.Size(111, 23);
             this.CheckData_button.TabIndex = 5;
@@ -246,16 +246,16 @@ namespace TiK_LR__6
             // 
             // InputCRC_textBox
             // 
-            this.InputCRC_textBox.Location = new System.Drawing.Point(127, 40);
+            this.InputCRC_textBox.Location = new System.Drawing.Point(97, 41);
             this.InputCRC_textBox.Name = "InputCRC_textBox";
             this.InputCRC_textBox.ReadOnly = true;
-            this.InputCRC_textBox.Size = new System.Drawing.Size(161, 20);
+            this.InputCRC_textBox.Size = new System.Drawing.Size(271, 20);
             this.InputCRC_textBox.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(124, 24);
+            this.label3.Location = new System.Drawing.Point(94, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 3;
@@ -263,15 +263,15 @@ namespace TiK_LR__6
             // 
             // messageForCheck_textBox
             // 
-            this.messageForCheck_textBox.Location = new System.Drawing.Point(127, 81);
+            this.messageForCheck_textBox.Location = new System.Drawing.Point(97, 82);
             this.messageForCheck_textBox.Name = "messageForCheck_textBox";
-            this.messageForCheck_textBox.Size = new System.Drawing.Size(161, 20);
+            this.messageForCheck_textBox.Size = new System.Drawing.Size(271, 20);
             this.messageForCheck_textBox.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(124, 65);
+            this.label4.Location = new System.Drawing.Point(94, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 13);
             this.label4.TabIndex = 1;

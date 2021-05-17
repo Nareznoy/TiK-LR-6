@@ -10,7 +10,7 @@ namespace TiK_LR__6
         readonly List<long> _inputMessages = new List<long>(); // Входные блоки данных
         readonly List<long> _CRCs = new List<long>(); // CRC коды входных блоков данных
         readonly List<bool> _isCorrect = new List<bool>(); // Содержит информацию о проверенных блоках данных
-        readonly List<long> _messagesForCheck = new List<long>(); // Принятые сообщения для проверки 
+        readonly List<long> _messagesForCheck = new List<long>(); // Принятые сообщения для проверки
 
         public Form1()
         {

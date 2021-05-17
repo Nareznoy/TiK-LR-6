@@ -18,15 +18,13 @@ namespace TiK_LR__6
             _inputCodeLength = (int)Math.Log(inputCode, 2) + 1;
             _poly <<= (_inputCodeLength - _polyLength); // Сдвиг полинома до старшего бита принятого сообщения
 
-            for (var i = 0; i < (_inputCodeLength - _polyLength); i++)
+            // Пока текущий размер полинома не равен исходному размеру полинома
+            while(((int)Math.Log(_poly, 2) + 1) > _polyLength)
             {
-                // Когда полином сдвигается до текущего старшего бита, выполняется операция XOR
-                if ((inputCode & (1 << (_inputCodeLength - i - 1))) == (1 << (_inputCodeLength - i - 1)))
-                {
-                    inputCode ^= _poly;
-                }
-                _poly >>= 1;
+                 inputCode ^= _poly;
+                _poly >>= ((int)Math.Log(_poly, 2) + 1) - ((int)Math.Log(inputCode, 2) + 1); // Сдвиг полинома до старшего бита
             }
+
             // Если размер текущего остатка равен размеру полинома, то выполнить XOR еще один раз
             if ((int)Math.Log(inputCode, 2) + 1 == (int)Math.Log(_poly, 2) + 1)
             {
