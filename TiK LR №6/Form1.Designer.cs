@@ -41,6 +41,7 @@ namespace TiK_LR__6
             this.message2_textBox = new System.Windows.Forms.TextBox();
             this.CalculateCRC_button = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.CheckResultLabel = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@ namespace TiK_LR__6
             this.label3 = new System.Windows.Forms.Label();
             this.messageForCheck_textBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,7 @@ namespace TiK_LR__6
             this.message16_textBox.Name = "message16_textBox";
             this.message16_textBox.Size = new System.Drawing.Size(161, 20);
             this.message16_textBox.TabIndex = 0;
+            this.message16_textBox.Text = "4e 61 6e 67";
             // 
             // label1
             // 
@@ -184,6 +185,20 @@ namespace TiK_LR__6
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Проверка данных";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "2",
+            "8",
+            "10",
+            "16"});
+            this.comboBox2.Location = new System.Drawing.Point(81, 81);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(41, 21);
+            this.comboBox2.TabIndex = 10;
+            this.comboBox2.Text = "16";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -205,7 +220,7 @@ namespace TiK_LR__6
             // CheckResultLabel
             // 
             this.CheckResultLabel.AutoSize = true;
-            this.CheckResultLabel.Location = new System.Drawing.Point(192, 144);
+            this.CheckResultLabel.Location = new System.Drawing.Point(41, 157);
             this.CheckResultLabel.Name = "CheckResultLabel";
             this.CheckResultLabel.Size = new System.Drawing.Size(0, 13);
             this.CheckResultLabel.TabIndex = 7;
@@ -213,7 +228,7 @@ namespace TiK_LR__6
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(124, 144);
+            this.label5.Location = new System.Drawing.Point(41, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 6;
@@ -233,6 +248,7 @@ namespace TiK_LR__6
             // 
             this.InputCRC_textBox.Location = new System.Drawing.Point(127, 40);
             this.InputCRC_textBox.Name = "InputCRC_textBox";
+            this.InputCRC_textBox.ReadOnly = true;
             this.InputCRC_textBox.Size = new System.Drawing.Size(161, 20);
             this.InputCRC_textBox.TabIndex = 2;
             // 
@@ -260,20 +276,6 @@ namespace TiK_LR__6
             this.label4.Size = new System.Drawing.Size(95, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Входные данные:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "2",
-            "8",
-            "10",
-            "16"});
-            this.comboBox2.Location = new System.Drawing.Point(81, 81);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(41, 21);
-            this.comboBox2.TabIndex = 10;
-            this.comboBox2.Text = "16";
             // 
             // Form1
             // 

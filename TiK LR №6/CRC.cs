@@ -4,7 +4,7 @@ namespace TiK_LR__6
 {
     static class CRC
     {
-        private static long _poly = 0b11001;
+        private static long _poly = 0b10010010101;
         private static readonly int _polyLength = (int) Math.Log(_poly, 2) + 1;
 
         private static int _inputCodeLength;
