@@ -4,7 +4,10 @@ namespace TiK_LR__6
 {
     static class CRC
     {
-        private static long _poly = 0b10010010101; // Генераторный полином: x^10 + x^7 + x^4 + x^2 + 1
+        //private static long _poly = 0b10010010101; // Генераторный полином: x^10 + x^7 + x^4 + x^2 + 1
+        private static long _poly = 0b110101;
+        //private static long _poly = 0b101011;
+
         private static readonly int _polyLength = (int) Math.Log(_poly, 2) + 1;
 
         private static int _inputCodeLength;
